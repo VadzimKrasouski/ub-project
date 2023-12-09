@@ -1,8 +1,8 @@
-import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
-import { App } from "./App";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./theme/ThemeProvider";
+import { ThemeProvider } from "app/providers/ThemeProvider";
+import { App } from "app/App";
 
 const domNode = document.getElementById('root')
 
