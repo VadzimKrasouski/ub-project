@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import cls from './MainPage.module.scss';
 
 interface MainPageProps {
@@ -5,9 +6,11 @@ interface MainPageProps {
 }
 
 const MainPage = ({ className }: MainPageProps) => {
+    const { t } = useTranslation('main');
+
     return (
         <div >
-           MAIN PAGE
+            {t('Main Page', { ns: 'main' })}
         </div>
     );
 };

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import cls from './AboutPage.module.scss';
 
 interface AboutPageProps {
@@ -5,9 +6,10 @@ interface AboutPageProps {
 }
 
 const AboutPage = ({ className }: AboutPageProps) => {
+    const { t } = useTranslation('about');
     return (
-        <div >
-           ABOUT PAGE
+        <div>
+            {t('About Page', { ns: 'about' })}
         </div>
     );
 };
