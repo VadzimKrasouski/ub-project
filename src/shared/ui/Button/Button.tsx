@@ -15,7 +15,7 @@ export const Button: FC<ButtonProps> = ({
     className,
     children,
     theme,
-    ...overProps
+    ...Props
 }) => (
     <button
         type="button"
@@ -24,7 +24,7 @@ export const Button: FC<ButtonProps> = ({
             {},
             [className, cls[theme]],
         )}
-        {...overProps}
+        {...Props}
     >
         {children}
     </button>
