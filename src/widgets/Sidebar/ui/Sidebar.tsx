@@ -36,7 +36,6 @@ export function Sidebar({ className }: SidebarProps) {
         <ThemeSwitcher />
         <LangSwitcher className={cls.lang} />
       </div>
-      tttrr
     </div>
   );
 }
