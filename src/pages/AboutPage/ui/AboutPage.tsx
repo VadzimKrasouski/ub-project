@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './AboutPage.module.scss';
 
 interface AboutPageProps {
-    className?: string;
+  className?: string;
 }
 
 function AboutPage({ className }: AboutPageProps) {

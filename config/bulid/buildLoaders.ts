@@ -59,8 +59,8 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
               outputPath: 'public/locales/{{locale}}/{{ns}}.json',
             },
           ],
-          'react-refresh/babel',
-        ],
+          // isDev && 'react-refresh/babel',
+        ].filter(Boolean),
       },
     },
   };

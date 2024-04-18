@@ -52,7 +52,7 @@ module.exports = {
     // '@typescript-eslint/no-unused-vars': 'warn',
     'i18next/no-literal-string': ['error',
       { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
-    // 'max-len': ['error', { code: 100, ignoreComments: true }],
+    'max-len': ['error', { code: 120, ignoreComments: true }],
   },
   globals: {
     __IS_DEV__: true,
