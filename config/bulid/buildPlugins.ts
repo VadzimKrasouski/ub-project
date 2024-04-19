@@ -5,22 +5,22 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { BuildOptions } from './types';
 
 export function buildPlugins({
-  paths,
-  isDev,
+    paths,
+    isDev,
 }: BuildOptions): webpack.WebpackPluginInstance[] {
-  return [
-    new webpack.ProgressPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Custom APP',
-      template: paths.html,
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].[contenthash:8].css',
-      chunkFilename: 'css/[name].[contenthash:8].css',
-    }),
-    new webpack.DefinePlugin({
-      __IS_DEV__: JSON.stringify(isDev),
-    }),
+    return [
+        new webpack.ProgressPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Custom APP',
+            template: paths.html,
+        }),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name].[contenthash:8].css',
+            chunkFilename: 'css/[name].[contenthash:8].css',
+        }),
+        new webpack.DefinePlugin({
+            __IS_DEV__: JSON.stringify(isDev),
+        }),
     // isDev && new ReactRefreshWebpackPlugin(),
-  ].filter(Boolean);
+    ].filter(Boolean);
 }

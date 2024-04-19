@@ -7,13 +7,13 @@ interface MainPageProps {
 }
 
 function MainPage({ className }: MainPageProps) {
-  const { t } = useTranslation('main');
+    const { t } = useTranslation('main');
 
-  return (
-    <div className={classNames(cls.mainPage, {}, [className])}>
-      {t('Main Page', { ns: 'main' })}
-    </div>
-  );
+    return (
+        <div className={classNames(cls.mainPage, {}, [className])}>
+            {t('Main Page', { ns: 'main' })}
+        </div>
+    );
 }
 
 export default MainPage;

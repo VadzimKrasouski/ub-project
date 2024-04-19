@@ -7,13 +7,13 @@ interface AboutPageProps {
 }
 
 function AboutPage({ className }: AboutPageProps) {
-  const { t } = useTranslation('about');
-  return (
-    <div className={classNames(cls.aboutPage, {}, [className])}>
-      {className}
-      {t('About Page', { ns: 'about' })}
-    </div>
-  );
+    const { t } = useTranslation('about');
+    return (
+        <div className={classNames(cls.aboutPage, {}, [className])}>
+            {className}
+            {t('About Page', { ns: 'about' })}
+        </div>
+    );
 }
 
 export default AboutPage;

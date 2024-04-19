@@ -9,17 +9,16 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import './styles/index.scss';
 
 export function App() {
-  const { theme } = useTheme();
-
-  return (
-    <div className={classNames('app', {}, [theme])}>
-      <Suspense fallback={null}>
-        <Navbar />
-        <div className="content-page">
-          <Sidebar />
-          <AppRouter />
+    const { theme } = useTheme();
+    return (
+        <div className={classNames('app', {}, [theme])}>
+            <Suspense fallback={null}>
+                <Navbar />
+                <div className="content-page">
+                    <Sidebar />
+                    <AppRouter />
+                </div>
+            </Suspense>
         </div>
-      </Suspense>
-    </div>
-  );
+    );
 }

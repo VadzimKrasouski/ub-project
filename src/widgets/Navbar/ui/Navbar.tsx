@@ -8,26 +8,26 @@ interface NavbarProps {
 }
 
 export function Navbar({ className }: NavbarProps) {
-  const { t } = useTranslation('navbar');
-  return (
-    <div className={classNames(cls.navbar, {}, [className])}>
-      <div className={classNames(cls.navItems)}>
-        <AppLink
-          theme={AppLinkTheme.INVERTED}
-          to="/"
-          className={classNames(cls.item)}
-        >
-          {t('Main Page', { ns: 'navbar' })}
-        </AppLink>
+    const { t } = useTranslation('navbar');
+    return (
+        <div className={classNames(cls.navbar, {}, [className])}>
+            <div className={classNames(cls.navItems)}>
+                <AppLink
+                    theme={AppLinkTheme.INVERTED}
+                    to="/"
+                    className={classNames(cls.item)}
+                >
+                    {t('Main Page', { ns: 'navbar' })}
+                </AppLink>
 
-        <AppLink
-          theme={AppLinkTheme.INVERTED}
-          to="/about"
-          className={classNames(cls.item)}
-        >
-          {t('About Page', { ns: 'navbar' })}
-        </AppLink>
-      </div>
-    </div>
-  );
+                <AppLink
+                    theme={AppLinkTheme.INVERTED}
+                    to="/about"
+                    className={classNames(cls.item)}
+                >
+                    {t('About Page', { ns: 'navbar' })}
+                </AppLink>
+            </div>
+        </div>
+    );
 }

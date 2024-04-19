@@ -6,12 +6,12 @@ interface LoaderProps {
 }
 
 export function Loader({ className }: LoaderProps) {
-  return (
-    <div className={classNames('lds-ellipsis', {}, [className])}>
-      <div />
-      <div />
-      <div />
-      <div />
-    </div>
-  );
+    return (
+        <div className={classNames('lds-ellipsis', {}, [className])}>
+            <div />
+            <div />
+            <div />
+            <div />
+        </div>
+    );
 }
