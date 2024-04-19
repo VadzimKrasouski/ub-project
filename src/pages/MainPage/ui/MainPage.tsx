@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './MainPage.module.scss';
+import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton';
 
 interface MainPageProps {
     className?: string;
@@ -12,6 +13,7 @@ function MainPage({ className }: MainPageProps) {
     return (
         <div className={classNames(cls.mainPage, {}, [className])}>
             {t('Main Page', { ns: 'main' })}
+            <BugButton />
         </div>
     );
 }

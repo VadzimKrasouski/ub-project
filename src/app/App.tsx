@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
@@ -10,6 +10,7 @@ import './styles/index.scss';
 
 export function App() {
     const { theme } = useTheme();
+
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback={null}>
