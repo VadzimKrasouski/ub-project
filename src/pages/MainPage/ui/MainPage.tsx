@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './MainPage.module.scss';
 import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton';
+import cls from './MainPage.module.scss';
 
 interface MainPageProps {
     className?: string;
