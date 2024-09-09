@@ -12,6 +12,7 @@ module.exports = {
         'plugin:import/recommended',
         'plugin:react/jsx-runtime',
         'plugin:i18next/recommended',
+        'plugin:jest-dom/recommended',
     ],
     overrides: [],
     parser: '@typescript-eslint/parser',
@@ -26,6 +27,7 @@ module.exports = {
         'react',
         '@typescript-eslint',
         'i18next',
+        'jest-dom',
     ],
     rules: {
         indent: ['error', 4],
@@ -72,6 +74,7 @@ module.exports = {
                 extensions: ['.js', '.jsx', '.ts', '.tsx'],
                 paths: ['src'],
             },
+
         },
     },
 };
